@@ -126,28 +126,8 @@ class DoublyLinkedList:
     """Removes the input node from its current spot in the 
     List and inserts it as the new head node of the List."""
     def move_to_front(self, node):
-        # if the list is empty
-        # if self.head is None and self.tail is None:
-        #     return
-        # # if the head equals the tail/the length is one
-        # elif self.head == self.tail:
-        #     return
-        # #if the list has multiple elements
-        # else:
-        #     value = node
-        #     prev_node = node.prev
-        #     print(prev_node)
-        #     print(self.node)
-        #     next_node = node.next
-        #     print(next_node)
-        #     prev_node.next = node.next
-        #     next_node.prev = node.prev
-        #     node.next = self.head
-        #     self.head.prev = value
-        #     # update head 
-        #     self.head = value
-        #     return
         pass
+        
         
 
     """Removes the input node from its current spot in the 
@@ -166,21 +146,21 @@ class DoublyLinkedList:
             return "empty"
         curr_node = self.head
         highestValue = curr_node.value
-        while curr_node.next is not None:
+        while curr_node is not None:
             if curr_node.value > highestValue:
                 highestValue = curr_node.value
             curr_node = curr_node.next
         return highestValue
 
-# our_dll = DoublyLinkedList()
-# our_dll.add_to_head(6)
-# our_dll.add_to_head(5)
-# our_dll.add_to_head(13)
-# print(f'our max value is: {our_dll.get_max()}')
-# our_dll.remove_from_head()
-# our_dll.add_to_head(5)
-# our_dll.add_to_tail(7)
+our_dll = DoublyLinkedList()
+our_dll.add_to_head(6)
+our_dll.add_to_head(5)
+our_dll.add_to_head(13)
+print(f'our max value is: {our_dll.get_max()}')
+our_dll.remove_from_head()
+our_dll.add_to_head(5)
+our_dll.add_to_tail(7)
 
-# print(our_dll)
+print(our_dll)
 
-# print(f'our max value is: {our_dll.get_max()}')
+print(f'our max value is: {our_dll.get_max()}')

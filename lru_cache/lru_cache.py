@@ -1,6 +1,12 @@
 # """Each ListNode holds a reference to its previous node
 # as well as its next node in the List."""
 
+# from doubly_linked_list import DoublyLinkedList
+# import sys
+# print(sys.path)
+# from doubly_linked_list import ListNode
+# from doubly_linked_list import DoublyLinkedList
+
 class ListNode:
     def __init__(self, value, prev=None, next=None):
         self.value = value

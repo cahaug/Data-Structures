@@ -152,15 +152,15 @@ class DoublyLinkedList:
             curr_node = curr_node.next
         return highestValue
 
-our_dll = DoublyLinkedList()
-our_dll.add_to_head(6)
-our_dll.add_to_head(5)
-our_dll.add_to_head(13)
-print(f'our max value is: {our_dll.get_max()}')
-our_dll.remove_from_head()
-our_dll.add_to_head(5)
-our_dll.add_to_tail(7)
+# our_dll = DoublyLinkedList()
+# our_dll.add_to_head(6)
+# our_dll.add_to_head(5)
+# our_dll.add_to_head(13)
+# print(f'our max value is: {our_dll.get_max()}')
+# our_dll.remove_from_head()
+# our_dll.add_to_head(5)
+# our_dll.add_to_tail(7)
 
-print(our_dll)
+# print(our_dll)
 
-print(f'our max value is: {our_dll.get_max()}')
+# print(f'our max value is: {our_dll.get_max()}')

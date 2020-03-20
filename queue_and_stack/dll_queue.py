@@ -8,7 +8,6 @@ from doubly_linked_list import DoublyLinkedList
 
 class Queue:
     def __init__(self):
-        self.size = 0
         # Why is our DLL a good choice to store our elements?
         self.storage = DoublyLinkedList()
 
@@ -26,26 +25,23 @@ class Queue:
     def enqueue(self, value):
         # add to the rear of the list and reflect change in size
         self.storage.add_to_tail(value)
-        self.size += 1
 
     def dequeue(self):
         # for queue take from front of queue, the head
-        if self.size > 0:
-            self.size -=1
-            return self.storage.remove_from_head()
+        return self.storage.remove_from_head()
 
     def len(self):
-        return self.size
+        return self.storage.length
 
-testQueue = Queue()
-testQueue.enqueue(5)
-testQueue.enqueue(6)
-testQueue.enqueue(7)
-testQueue.enqueue(8)
-print(testQueue)
-print(f'Size of Queue: {testQueue.size}')
-remVal = testQueue.dequeue()
-print(f'Removed {remVal}')
-print(testQueue)
+# testQueue = Queue()
+# testQueue.enqueue(5)
+# testQueue.enqueue(6)
+# testQueue.enqueue(7)
+# testQueue.enqueue(8)
+# print(testQueue)
+# print(f'Size of Queue: {testQueue.size}')
+# remVal = testQueue.dequeue()
+# print(f'Removed {remVal}')
+# print(testQueue)
 
-print(f'Size of Queue: {testQueue.size}')
+# print(f'Size of Queue: {testQueue.size}')
